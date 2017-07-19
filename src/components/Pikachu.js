@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 class Pikachu extends React.Component {
 
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       size: 100
-    };
+    }
   }
 
   componentDidUpdate = () => {
@@ -15,21 +15,21 @@ class Pikachu extends React.Component {
   }
 
   resizePikachu = () => {
-    const pikachu = document.getElementById("pikachu");
-    pikachu.height = this.state.size;
-    pikachu.width = this.state.size;
+    const pikachu = document.getElementById("pikachu")
+    pikachu.height = this.state.size
+    pikachu.width = this.state.size
   }
 
   makeBigger = () => {
     this.setState({
       size: this.state.size + 10
-    });
+    })
   }
 
   makeSmaller = () => {
     this.setState({
       size: this.state.size - 10
-    });
+    })
   }
 
   render() {
@@ -42,4 +42,4 @@ class Pikachu extends React.Component {
   }
 }
 
-export default Pikachu;
+export default Pikachu

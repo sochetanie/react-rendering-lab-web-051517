@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 class Circle extends React.Component {
 
@@ -7,8 +7,8 @@ class Circle extends React.Component {
   }
 
   render() {
-    const { color } = this.props;
-    console.log(`A ${color} circle was rendered!`);
+    const { color } = this.props
+    console.log(`A ${color} circle was rendered!`)
     
     return (
       <div className={`circle ${color}`}></div>
@@ -16,4 +16,4 @@ class Circle extends React.Component {
   }
 }
 
-export default Circle;
+export default Circle
